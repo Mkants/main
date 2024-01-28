@@ -33,7 +33,7 @@ $(function() {
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
             },
-            body: encodeURI(`showcode=${$("#save_showcode").val()}&savecode=${$("#save_savecode").val()}&password=${$("#save_password").val()}&requestType=save`)
+            body: encodeURI(`showcode=${$("#save_showcode").val()}&savecode=${$("#save_savecode").val().replace(/\+/g,"%2B")}&password=${$("#save_password").val()}&requestType=save`)
         })
         .then((response) => {
             response.json().then((json) => {
@@ -60,7 +60,7 @@ $(function() {
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
             },
-            body: encodeURI(`showcode=${$("#change_showcode").val()}&savecode=${$("#change_savecode").val()}&password=${$("#change_password").val()}&requestType=change`)
+            body: encodeURI(`showcode=${$("#change_showcode").val()}&savecode=${$("#change_savecode").val().replace(/\+/g,"%2B")}&password=${$("#change_password").val()}&requestType=change`)
         })
         .then((response) => {
             response.json().then((json) => {

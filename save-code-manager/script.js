@@ -1,6 +1,6 @@
 $(function() {
 	"use strict";
-	const api_url = `https://script.google.com/macros/s/AKfycbxL1Nc62WWAqzmesZAtoLQPQnjxTSudXtQu783Cw5lWznySi5MXkJIYNn8StfRNnKrwrA/exec`;
+	const api_url = `https://script.google.com/macros/s/AKfycbwAtkvQxL2aI0JpK332gfJ5vzbiGCfKcnUb4eHMzfbMEdqXRDUa0LzglktvAfKaTo7hwg/exec`;
 	$("form[name=view]").on('submit',()=>{
 	    $("textarea#get_savedata").text("データ取得中...");
 	    fetch(api_url, {

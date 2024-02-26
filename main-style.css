@@ -3,6 +3,7 @@
 
 html      {font-family: 'Zen Kaku Gothic New', sans-serif;}
 body      {margin: 0; padding: 0; height:100vh;}
+.hidden {display: none;}
 
 a         {color: #2a62ff; text-decoration: none;}
 a:visited {color: #2a62ff;}

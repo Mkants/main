@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.Content {
+    background-color: #aadfdf;
+    border-radius: 6px;
+    padding: 4px;
+    margin: 8px;
+}
+
+.Content > .Update > span {
+    display: inline-block;
+    margin-left: 16px;
+    font-size: 1.6em;
+}

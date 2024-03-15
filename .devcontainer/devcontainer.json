@@ -6,7 +6,9 @@
 				"MS-CEINTL.vscode-language-pack-ja",
 				"eamodio.gitlens",
 				"oderwat.indent-rainbow",
-				"NilsSoderman.sitemap-generator"
+				"NilsSoderman.sitemap-generator",
+                "esbenp.prettier-vscode",
+                "ms-azuretools.vscode-azurestaticwebapps"
             ]
         }
     }

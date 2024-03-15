@@ -7,8 +7,7 @@
 				"eamodio.gitlens",
 				"oderwat.indent-rainbow",
 				"NilsSoderman.sitemap-generator",
-                "esbenp.prettier-vscode",
-                "ms-azuretools.vscode-azurestaticwebapps"
+                "esbenp.prettier-vscode"
             ]
         }
     }

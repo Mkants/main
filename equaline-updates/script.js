@@ -25,10 +25,12 @@ function ListToHTML(Datas) {
 }
 
 $(function () {
+	// バージョン履歴（上から下に行くと新しくなる）
 	const Versions = [
 		"-10.0.0",
 		"-9.9.9"
 	];
+	// バージョン履歴（上から下に行くと新しくなる）
 	const Dates = [
 		"2024/02/29",
 		"2024/03/03"

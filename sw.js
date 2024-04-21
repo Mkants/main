@@ -1,4 +1,4 @@
-const CACHE_NAME = "date2024-04-21v1";
+const CACHE_NAME = "date2024-04-21v1.1";
 const urlsToCache = [
 	"/index.html",
 	"/script.js",

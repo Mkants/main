@@ -1,26 +1,41 @@
 @charset "utf-8";
+
+/* フォント設定のインポート */
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 
+/* フォントの設定 */
 html      {font-family: 'Zen Kaku Gothic New', sans-serif;}
+
+/* ページ全体の設定 */
 body      {margin: 0; padding: 0; height:100vh;}
+
+/* 隠す要素の設定 */
 .hidden {display: none;}
 
+/* aタグの設定 */
 a         {color: #2a62ff; text-decoration: none;}
 a:visited {color: #2a62ff;}
 a:hover   {color: #2f1aff;}
 
+/* h1タグの設定 */
 h1        {margin: 0; padding: 0; background-color: #eee;}
 
+/* 左のスペースの設定 */
 div#LeftSpace {margin-left: 8px;}
 
+/* フッターの設定 */
 footer {position: sticky; top: 100vh; background-color:#eee; text-align: center;}
 
+/* パンくずリストの設定 */
 ol#Breadcrumb                      {list-style-type: none; margin: 0; padding: 0;}
 ol#Breadcrumb li                   {display: inline-block;}
 ol#Breadcrumb li::after            {content: ' >'; display: inline-block;}
 ol#Breadcrumb li:last-child::after {content: '';}
 
+/* 入力の枠の設定 */
 input                      {padding: 2px; border: 2px solid #c0c0c0; border-radius: 4px;}
 input[type="submit"]       {background-color: #25a5ff; color: #ffffff; padding: 4px;}
 input[type="submit"]:hover {background-color: #1546ee; color: #fefefe;}
+
+/* textarea要素の設定 */
 textarea.noresize          {resize: none;}

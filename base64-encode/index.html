@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Base64エンコード</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/main-style.css">
+</head>
+
+<body>
+	<h1>Base64エンコード</h1>
+	<div id="LeftSpace">
+		<header>
+			<ol id="Breadcrumb">
+				<li><a href="/">トップページ</a></li>
+				<li>Base64エンコード</li>
+			</ol>
+			<noscript title="JavaScriptをオンにしてください。">このサイトはJavascriptを使用しています。</noscript>
+		</header>
+		<main>
+			<p>注：簡易的なのでおかしくなることがあります。</p>
+			<h2>テキストエンコード</h2>
+			<textarea rows="5" cols="50" id="i"></textarea><br>
+			<button id="e">エンコード</button><br>
+			<input readonly id="o"><br>
+
+			<h2>ファイルエンコード</h2>
+			<input type="file" id="f" /><br>
+			<input readonly id="t">
+
+			<br>
+			<h2>Base64型エンコーダー</h2>
+			<a href="data:text/html;base64,PCFET0NUWVBFIGh0bWw+PGh0bWw+PGhlYWQ+PG1ldGEgY2hhcnNldD0idXRmLTgiPjx0aXRsZT5CYXNlNjTjgqjjg7PjgrPjg7zjg4k8L3RpdGxlPjwvaGVhZD48Ym9keT48dGV4dGFyZWEgcm93cz0iNSIgY29scz0iNTAiIGlkPSJpIj48L3RleHRhcmVhPjxicj48YnV0dG9uIGlkPSJlIj7jgqjjg7PjgrPjg7zjg4k8L2J1dHRvbj48YnI+PGlucHV0IHJlYWRvbmx5IGlkPSJvIj48YnI+PGlucHV0IHR5cGU9ImZpbGUiIGlkPSJmIj48YnI+PGlucHV0IHJlYWRvbmx5IGlkPSJ0Ij48c2NyaXB0PmxldCAkPShpKT0+ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoaSk7JCgiZSIpLm9uY2xpY2s9KCk9PnskKCJvIikudmFsdWU9YigkKCJpIikudmFsdWUpfTtmdW5jdGlvbiBiKGlucHV0KXtsZXQgYT1uZXcgVGV4dEVuY29kZXIoKS5lbmNvZGUoaW5wdXQpO2xldCBkPVsiQSIsIkIiLCJDIiwiRCIsIkUiLCJGIiwiRyIsIkgiLCJJIiwiSiIsIksiLCJMIiwiTSIsIk4iLCJPIiwiUCIsIlEiLCJSIiwiUyIsIlQiLCJVIiwiViIsIlciLCJYIiwiWSIsIloiLCJhIiwiYiIsImMiLCJkIiwiZSIsImYiLCJnIiwiaCIsImkiLCJqIiwiayIsImwiLCJtIiwibiIsIm8iLCJwIiwicSIsInIiLCJzIiwidCIsInUiLCJ2IiwidyIsIngiLCJ5IiwieiIsIjAiLCIxIiwiMiIsIjMiLCI0IiwiNSIsIjYiLCI3IiwiOCIsIjkiLCIrIiwiLyJdO2xldCBiPSIiO2ZvcihsZXQgdCBvZiBhKXtiKz0oIjAwMDAwMDAwIit0LnRvU3RyaW5nKDIpKS5zbGljZSgtOCk7fXdoaWxlKGIubGVuZ3RoJTY+MCl7Yis9IjAifWxldCBvPSIiO2ZvcihsZXQgaT0wO2k8Yi5sZW5ndGgvNjtpKyspe2xldCBuPXBhcnNlSW50KGIuc3Vic3RyKGkqNiw2KSwyKTtvKz1kW25dO313aGlsZShvLmxlbmd0aCU0PjApe28rPSI9Ijt9cmV0dXJuIG87fSQoImYiKS5vbmNoYW5nZT0oKT0+e2xldCByPW5ldyBGaWxlUmVhZGVyKCk7ci5vbmxvYWQ9KGUpPT57JCgidCIpLnZhbHVlPWUuY3VycmVudFRhcmdldC5yZXN1bHR9O3IucmVhZEFzRGF0YVVSTCgkKCJmIikuZmlsZXNbMF0pfTwvc2NyaXB0PjwvYm9keT48L2h0bWw+">テキスト・ファイルエンコード</a><br>
+			<a href="data:text/html;base64,PCFET0NUWVBFIGh0bWw+PGh0bWw+PGhlYWQ+PG1ldGEgY2hhcnNldD0idXRmLTgiPjx0aXRsZT5CYXNlNjTjgqjjg7PjgrPjg7zjg4k8L3RpdGxlPjwvaGVhZD48Ym9keT48dGV4dGFyZWEgcm93cz0iNSIgY29scz0iNTAiIGlkPSJpIj48L3RleHRhcmVhPjxicj48YnV0dG9uIGlkPSJlIj7jgqjjg7PjgrPjg7zjg4k8L2J1dHRvbj48YnI+PGlucHV0IHJlYWRvbmx5IGlkPSJvIj48c2NyaXB0PmxldCAkPShpKT0+ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoaSk7JCgiZSIpLm9uY2xpY2s9KCk9PnskKCJvIikudmFsdWU9YigkKCJpIikudmFsdWUpfTtmdW5jdGlvbiBiKGlucHV0KXtsZXQgYT1uZXcgVGV4dEVuY29kZXIoKS5lbmNvZGUoaW5wdXQpO2xldCBkPVsiQSIsIkIiLCJDIiwiRCIsIkUiLCJGIiwiRyIsIkgiLCJJIiwiSiIsIksiLCJMIiwiTSIsIk4iLCJPIiwiUCIsIlEiLCJSIiwiUyIsIlQiLCJVIiwiViIsIlciLCJYIiwiWSIsIloiLCJhIiwiYiIsImMiLCJkIiwiZSIsImYiLCJnIiwiaCIsImkiLCJqIiwiayIsImwiLCJtIiwibiIsIm8iLCJwIiwicSIsInIiLCJzIiwidCIsInUiLCJ2IiwidyIsIngiLCJ5IiwieiIsIjAiLCIxIiwiMiIsIjMiLCI0IiwiNSIsIjYiLCI3IiwiOCIsIjkiLCIrIiwiLyJdO2xldCBiPSIiO2ZvcihsZXQgdCBvZiBhKXtiKz0oIjAwMDAwMDAwIit0LnRvU3RyaW5nKDIpKS5zbGljZSgtOCk7fXdoaWxlKGIubGVuZ3RoJTY+MCl7Yis9IjAifWxldCBvPSIiO2ZvcihsZXQgaT0wO2k8Yi5sZW5ndGgvNjtpKyspe2xldCBuPXBhcnNlSW50KGIuc3Vic3RyKGkqNiw2KSwyKTtvKz1kW25dO313aGlsZShvLmxlbmd0aCU0PjApe28rPSI9Ijt9cmV0dXJuIG87fTwvc2NyaXB0PjwvYm9keT48L2h0bWw+">テキストエンコードのみ</a><br>
+			<a href="data:text/html;base64,PCFET0NUWVBFIGh0bWw+PGh0bWw+PGhlYWQ+PG1ldGEgY2hhcnNldD0idXRmLTgiPjx0aXRsZT5CYXNlNjTjgqjjg7PjgrPjg7zjg4k8L3RpdGxlPjwvaGVhZD48Ym9keT48aW5wdXQgdHlwZT0iZmlsZSIgaWQ9ImYiPjxicj48aW5wdXQgcmVhZG9ubHkgaWQ9InQiPjxzY3JpcHQ+bGV0ICQ9KGkpPT5kb2N1bWVudC5nZXRFbGVtZW50QnlJZChpKTskKCJmIikub25jaGFuZ2U9KCk9PntsZXQgcj1uZXcgRmlsZVJlYWRlcigpO3Iub25sb2FkPShlKT0+eyQoInQiKS52YWx1ZT1lLmN1cnJlbnRUYXJnZXQucmVzdWx0fTtyLnJlYWRBc0RhdGFVUkwoJCgiZiIpLmZpbGVzWzBdKX08L3NjcmlwdD48L2JvZHk+PC9odG1sPg==">ファイルエンコードのみ</a>
+			
+			<script src="script.js"></script>
+		</main>
+	</div>
+	<footer>
+		&copy; 2024 honnkon All rights reserved.
+	</footer>
+</body>
+
+</html>

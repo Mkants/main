@@ -1,4 +1,4 @@
-const CACHE_NAME = "date2024-04-21v1.1";
+const CACHE_NAME = "date2024-05-02v1";
 const urlsToCache = [
 	"/index.html",
 	"/script.js",
@@ -28,7 +28,7 @@ self.addEventListener("fetch", (event) => {
 			// ネットワークリクエストを行い、レスポンスを取得
 			return fetch(event.request).then((response) => {
 				// 有効なレスポンスか確認（オプション）
-				if (!response || response.status !== 200 || response.type !== "basic") {
+				/*if (!response || response.status !== 200 || response.type !== "basic") {
 					return response;
 				}
 
@@ -39,7 +39,7 @@ self.addEventListener("fetch", (event) => {
 					if (event.request !== "chrome-extension") {
 						cache.put(event.request, responseToCache);
 					}
-				});
+				});*/
 
 				return response;
 			});

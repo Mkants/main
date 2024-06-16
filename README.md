@@ -1,3 +1,4 @@
 # 概要
 
-[このサイト](https://www.honnkon.tech)のソースコードです。
+[このサイト](https://honnkon.tech)のソースコードです。
+Netlify経由でつなげています。

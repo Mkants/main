@@ -7,6 +7,7 @@
 	<meta name="description" content="放置ゲームです。" />
 	<title>放置ゲーム</title>
 	<link rel="stylesheet" href="/main-style.css" />
+	<link rel="stylesheet" href="style.css" />
 	<link rel="icon" href="/favicon.ico" sizes="32x32" />
 	<script src="/jquery.min.js"></script>
 	<script src="script.js"></script>
@@ -17,6 +18,17 @@
 		<noscript title="JavaScriptをオンにしてください。">このサイトはJavascriptを使用しています。</noscript>
 	</header>
 	<main>
+		<div id="view-container">
+			<div id="point">0ポイント</div>
+			<div id="second-point">1ポイント/s</div>
+		</div>
+		<div id="shop">
+			<button>秒間ポイント増加1</button>
+		</div>
+		<div id="shop-summary">
+			<div id="item">秒間ポイント増加1</div>
+			<div id="item-cost">コスト: 10ポイント</div>
+		</div>
 	</main>
 </body>
 

@@ -1,3 +1,7 @@
+if (location.host != "honnkon.tech") {
+	location.replace("https://honnkon.tech");
+}
+
 if ('serviceWorker' in navigator) {
 	window.addEventListener('load', () => {
 		navigator.serviceWorker.register('/sw.js')

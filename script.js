@@ -1,4 +1,4 @@
-if (location.host != "honnkon.tech") {
+if (location.host !== "honnkon.tech" || location.host !== "honnkon.f5.si") {
 	location.replace("https://honnkon.tech");
 }
 

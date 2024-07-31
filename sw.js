@@ -8,22 +8,16 @@ const urlsToCache = [
 ];
 
 self.addEventListener("install", (event) => {
-	// インストール処理
-	event.waitUntil(
-		caches.open(CACHE_NAME).then((cache) => {
-			console.log("Opened cache");
-			return cache.addAll(urlsToCache);
-		})
-	);
+	// empty
 });
 
 self.addEventListener("fetch", (event) => {
 	event.respondWith(
 		caches.match(event.request).then((cachedResponse) => {
-			// キャッシュがあればそのレスポンスを返す
+			/*// キャッシュがあればそのレスポンスを返す
 			if (cachedResponse) {
 				return cachedResponse;
-			}
+			}*/
 
 			// ネットワークリクエストを行い、レスポンスを取得
 			return fetch(event.request).then((response) => {

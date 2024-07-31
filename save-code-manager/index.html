@@ -7,8 +7,6 @@
 	<meta name="description" content="honnkonのサイトです。セーブコードマネージャーなどがあります。良ければ見ていってください。" />
 	<link rel="stylesheet" href="/main-style.css">
 	<link rel="icon" href="/favicon.ico" sizes="32x32">
-	<script src="/jquery.min.js"></script>
-	<script src="script.js"></script>
 </head>
 <body>
 	<h1>セーブコードマネージャー</h1>
@@ -18,12 +16,12 @@
 				<li><a href="/">トップページ</a></li>
 				<li>セーブコードマネージャ</li>
 			</ol>
-			<noscript title="JavaScriptをオンにしてください。">このWebページはJavascriptを使用しています。</noscript>
+			<noscript title="JavaScriptをオンにしてください。">このページはJavascriptを使用しています。</noscript>
 		</header>
 		<main>
 			<h2>閲覧</h2>
 			<form name="view">
-				<label>閲覧コード：<input id="show_showcode" type="text" required/></label>
+				<label>閲覧コード：<input id="get_showcode" type="text" required/></label>
 				<br/>
 				<input type="submit" value="閲覧"/>
 				<br/>
@@ -38,7 +36,7 @@
 				<br/>
 				<label>パスワード：　<input id="save_password" type="password" required/></label>
 				<br/>
-				<span class="small">パスワードはセーブコードを新たなデータにするのに利用できます。パスワードを変更することは今のところできません。</span>
+				<span class="small">パスワードはセーブコードを新たなデータにするのに利用できます。</span>
 				<br/>
 				<input type="submit" value="保存"/>
 				<br/>
@@ -53,16 +51,42 @@
 				<br/>
 				<label>パスワード：　　　　<input id="change_password" type="password" required/></label>
 				<br/>
-				<span class="small">登録時に使用したパスワードを入力してください。パスワードを変更することは今のところできません。</span>
-				<br/>
 				<input type="submit" value="変更"/>
 				<br/>
 				<span id="change_response"></span>
+			</form>
+			<hr/>
+			<h2>削除</h2>
+			<form name="delete">
+				<label>閲覧コード：　　　　<input id="delete_showcode" type="text" required/></label>
+				<br/>
+				<label>パスワード：　　　　<input id="delete_password" type="password" required/></label>
+				<br/>
+				<span class="small">削除すると元に戻せません。</span>
+				<br/>
+				<input type="submit" value="削除"/>
+				<br/>
+				<span id="delete_response"></span>
+			</form>
+			<hr/>
+			<h2>パスワード変更</h2>
+			<form name="passchange">
+				<label>閲覧コード：　　　　<input id="passchange_showcode" type="text" required/></label>
+				<br/>
+				<label>パスワード：　　　　<input id="passchange_password" type="password" required/></label>
+				<br/>
+				<label>新しいパスワード：　<input id="passchange_newpassword" type="password" required/></label>
+				<br/>
+				<input type="submit" value="変更"/>
+				<br/>
+				<span id="passchange_response"></span>
 			</form>
 		</main>
 	</div>
 	<footer>
 		&copy; 2024 honnkon All rights reserved.
 	</footer>
+
+	<script src="script.js"></script>
 </body>
 </html>

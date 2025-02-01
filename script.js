@@ -1,3 +1,4 @@
+/* サービスワーカーの登録は一時停止
 if ('serviceWorker' in navigator) {
 	window.addEventListener('load', () => {
 		navigator.serviceWorker.register('/sw.js')
@@ -9,7 +10,12 @@ if ('serviceWorker' in navigator) {
 		});
 	});
 }
+*/
 
-$(function() {
+if ((location.domain = "honnkon.tech")) {
+	location.replace("https://mkants.f5.si");
+}
+
+$(function () {
 	"use strict";
 });

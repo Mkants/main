@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
 }
 */
 
-if ((location.domain = "honnkon.tech")) {
+if ((location.host = "honnkon.tech")) {
 	location.replace("https://mkants.f5.si");
 }
 

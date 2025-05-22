@@ -8,19 +8,6 @@
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
   <title>ビル経営ゲーム Remix版</title>
-  <script>
-    if ('serviceWorker' in navigator) {
-	window.addEventListener('load', () => {
-		navigator.serviceWorker.register('/sw.js')
-		.then(registration => {
-			console.log('ServiceWorker registration successful with scope: ', registration.scope);
-		})
-		.catch(err => {
-			console.log('ServiceWorker registration failed: ', err);
-		});
-	});
-}
-  </script>
   <style>
     body {
       color: #ffffff;

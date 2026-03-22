@@ -3,39 +3,165 @@
 /* フォント設定のインポート */
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 
-/* フォントの設定 */
-html      {font-family: 'Zen Kaku Gothic New', sans-serif;}
+html {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
 
-/* ページ全体の設定 */
-body      {margin: 0; padding: 0; height:100vh;}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
 
-/* 隠す要素の設定 */
-.hidden {display: none;}
+.hidden,
+[hidden] {
+  display: none;
+}
 
-/* aタグの設定 */
-a         {color: #2a62ff; text-decoration: none;}
-a:visited {color: #2a62ff;}
-a:hover   {color: #2f1aff;}
+a {
+  color: #2a62ff;
+  text-decoration: none;
+}
 
-/* h1タグの設定 */
-h1        {margin: 0; padding: 0; background-color: #eee;}
+a:visited {
+  color: #2a62ff;
+}
 
-/* 左のスペースの設定 */
-div#LeftSpace {margin-left: 8px;}
+a:hover {
+  color: #2f1aff;
+}
 
-/* フッターの設定 */
-footer {position: sticky; top: 100vh; background-color:#eee; text-align: center;}
+h1 {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
 
-/* パンくずリストの設定 */
-ol#Breadcrumb                      {list-style-type: none; margin: 0; padding: 0;}
-ol#Breadcrumb li                   {display: inline-block;}
-ol#Breadcrumb li::after            {content: ' >'; display: inline-block;}
-ol#Breadcrumb li:last-child::after {content: '';}
+div#LeftSpace {
+  margin-left: 8px;
+}
 
-/* 入力の枠の設定 */
-input                      {padding: 2px; border: 2px solid #c0c0c0; border-radius: 4px;}
-input[type="submit"]       {background-color: #25a5ff; color: #ffffff; padding: 4px;}
-input[type="submit"]:hover {background-color: #1546ee; color: #fefefe;}
+footer {
+  position: sticky;
+  top: 100vh;
+  background-color: #eee;
+  text-align: center;
+}
 
-/* textarea要素の設定 */
-textarea.noresize          {resize: none;}
+ol#Breadcrumb {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol#Breadcrumb li {
+  display: inline-block;
+}
+
+ol#Breadcrumb li::after {
+  content: ' >';
+  display: inline-block;
+}
+
+ol#Breadcrumb li:last-child::after {
+  content: '';
+}
+
+input {
+  padding: 2px;
+  border: 2px solid #c0c0c0;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #25a5ff;
+  color: #ffffff;
+  padding: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #1546ee;
+  color: #fefefe;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+button,
+label:has(input[type="file"]) {
+  background-color: #e9e9ed;
+  color: #000000;
+  display: inline-block;
+  padding: 2px;
+  border: 1px solid #8f8f9d;
+  border-radius: 4px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+button:hover,
+label:has(input[type="file"]):hover {
+  background-color: #d0d0d7;
+}
+
+button:active,
+label:has(input[type="file"]):active {
+  background-color: #b1b1b9;
+}
+
+textarea.noresize {
+  resize: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222222;
+    color: #ffffff;
+  }
+
+  h1,
+  footer {
+    background-color: #555555;
+  }
+
+  a,
+  a:visited {
+    color: #6e5ffc;
+  }
+
+  a:hover {
+    color: #9d93ff;
+  }
+
+  footer a,
+  footer a:visited {
+    color: #1229c9;
+  }
+
+  footer a:hover {
+    color: #2f3fc5;
+  }
+
+  textarea,
+  input {
+    background-color: #151515;
+    color: #ffffff;
+  }
+
+  button,
+  label:has(input[type="file"]) {
+    background-color: #303030;
+    color: #ffffff;
+  }
+
+  button:hover,
+  label:has(input[type="file"]):hover {
+    background-color: #606060;
+  }
+
+  button:active,
+  label:has(input[type="file"]):active {
+    background-color: #454545;
+  }
+
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta
+            name="description"
+            content="Mkantsのサイトです。良ければ見ていってください。"
+        />
+        <title>ルーレット</title>
+        <link rel="stylesheet" href="/main-style.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    </head>
+    <body>
+        <h1>ルーレット</h1>
+        <div id="LeftSpace">
+            <header>
+                <ol id="Breadcrumb">
+                    <li><a href="/">トップページ</a></li>
+                    <li>ルーレット</li>
+                </ol>
+            </header>
+            <noscript>このサイトはJavascriptを使用しています。</noscript>
+            <main>
+                <div id="RouletteMain">
+                    <div id="Roulette_Result">未抽選</div>
+                    <canvas width="600" height="600" id="roulette"></canvas>
+                    <button id="roulette_spin">抽選</button>
+                </div>
+                <br />
+                抽選リスト
+                <br />
+                <textarea
+                    id="roulette_items"
+                    rows="10"
+                    cols="50"
+                    placeholder="1行につき
+1つの項目を
+入力してください。"
+                ></textarea>
+            </main>
+        </div>
+        <footer>&copy; 2026 Mkants All rights reserved.</footer>
+    </body>
+    <script src="./script.js"></script>
+</html>

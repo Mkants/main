@@ -1,0 +1,31 @@
+#RouletteMain {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 4px solid #000000;
+}
+
+#Roulette_Result {
+    width: 600px;
+    text-align: center;
+    background-color: #aaaaaa;
+    font-size: 3em;
+    color: #000000;
+    transition: background-color 1s ease;
+}
+
+#roulette_spin {
+    display: block;
+    margin: 10px auto;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #66dd66;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+#roulette_spin:hover {
+    background-color: #33aa33;
+}

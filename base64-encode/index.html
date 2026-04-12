@@ -1,45 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Base64エンコード</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Mkantsのサイトです。良ければ見ていってください。"
+        />
+        <link rel="stylesheet" href="/main-style.css" />
+    </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Base64エンコード</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mkantsのサイトです。良ければ見ていってください。" />
-  <link rel="stylesheet" href="/main-style.css">
-</head>
+    <body>
+        <h1>Base64エンコード</h1>
+        <div id="LeftSpace">
+            <header>
+                <ol id="Breadcrumb">
+                    <li><a href="/">トップページ</a></li>
+                    <li>Base64エンコード</li>
+                </ol>
+                <noscript>このサイトはJavascriptを使用しています。</noscript>
+            </header>
+            <main>
+                <p>注：動作は保証しません。</p>
+                <h2>テキストエンコード</h2>
+                <textarea rows="5" cols="50" id="i"></textarea><br />
+                <button id="e">エンコード</button><br />
+                <input readonly id="o" /><br />
 
-<body>
-  <h1>Base64エンコード</h1>
-  <div id="LeftSpace">
-    <header>
-      <ol id="Breadcrumb">
-        <li><a href="/">トップページ</a></li>
-        <li>Base64エンコード</li>
-      </ol>
-      <noscript title="JavaScriptをオンにしてください。">このサイトはJavascriptを使用しています。</noscript>
-    </header>
-    <main>
-      <p>注：動作は保証しません。</p>
-      <h2>テキストエンコード</h2>
-      <textarea rows="5" cols="50" id="i"></textarea><br>
-      <button id="e">エンコード</button><br>
-      <input readonly id="o"><br>
+                <h2>ファイルエンコード</h2>
+                <label>
+                    ファイルを選択
+                    <input type="file" id="f" /><br />
+                </label>
+                <br />
+                <input readonly id="t" />
 
-      <h2>ファイルエンコード</h2>
-      <label>
-        ファイルを選択
-        <input type="file" id="f" /><br>
-      </label>
-      <br />
-      <input readonly id="t">
-
-      <script src="script.js"></script>
-    </main>
-  </div>
-  <footer>
-    &copy; 2026 Mkants All rights reserved.
-  </footer>
-</body>
-
+                <script src="script.js"></script>
+            </main>
+        </div>
+        <footer>&copy; 2026 Mkants All rights reserved.</footer>
+    </body>
 </html>
